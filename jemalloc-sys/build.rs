@@ -151,7 +151,7 @@ fn main() {
 
     // Run configure:
     let configure = build_dir.join("configure");
-    let mut cmd = Command::new("sh");
+    let mut cmd = Command::new("bash -c");
     cmd.arg(
         configure
             .to_str()
